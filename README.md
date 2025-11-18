@@ -7,7 +7,7 @@
 
 Download and double click the installer / runner from [here](https://github.com/FT-Autonomous/ft_grandprix/releases/download/v1.0.0-alpha/run_ft_grandprix.bat). Once you have the file you can click on it at any time to launch the simulator. The simulator will install to the folder "%USERPROFILE%\Documents\FT Grand Prix\ft_grandprix-main\". You can edit your driver file in the "%USERPROFILE%\Documents\FT Grand Prix\ft_grandprix-main\drivers\template.py" folder.
 
-If the installer seems to run for a bit and then just freeze/crash or not run at all, you might need to install microsoft visual c++ redistributable for your architecture from here.
+If the installer seems to run for a bit and then just freeze/crash or not run at all, you might need to install microsoft visual c++ redistributable for your architecture from [here](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 ## Manual
 
