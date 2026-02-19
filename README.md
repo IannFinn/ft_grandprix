@@ -72,9 +72,15 @@ git pull
 
 # Writing a Driver
 
-The drivers "ft_grandprix.nidc" and "ft_grandprix.fast" are bundled with the project the only relevant function is the `process_lidar` function, which generates a speed and a steering angle.
+The only relevant function is the `process_lidar` function, which generates a speed and a steering angle. This is a callback function called at every simulation step (hundreds of times per second).
+
 To start writing a driver, you can start by modifying the `drivers.template` drive.
+
+Hints:
+- Print out the lidar data to see what it looks like. (It is essentially a list of distance values)
+- You would want to filter for the relevant lidar data (for example: usually you won't need to car about what is behind your car)
+- Once your lidar data filtered, you can calculate the speed and steering angle based on how the distance increases or decreases in certain directions (for example you can do this by considering deltas of adjacent values)
 
 # Reporting Bugs
 
-Make an issue on github and I will try to fix it.
+Make an issue on github, with a detailed description of the bug and details on your environment (OS, python version, etc.) and we will try to fix it.
